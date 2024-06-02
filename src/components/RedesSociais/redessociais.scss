@@ -16,14 +16,20 @@
   }
   #linkedin {
     color: #0072b1;
+    &:hover {
+      background: variables.$gradient-hover;
+    }
   }
   #instagram {
     color: #bc2a8d;
+    &:hover {
+      background: variables.$gradient-hover;
+    }
   }
   #github {
     color: #111;
-  }
-  &hover {
-    background: variables.$gradient;
+    &:hover {
+      background: variables.$gradient-hover;
+    }
   }
 }

@@ -13,8 +13,8 @@ const Sidebar = () => {
       <Contacts />
 
       <a href="" className="btn">
-        Curriculum
         <WiDirectionUpRight className="direction" />
+        Curriculum
       </a>
     </aside>
   );
