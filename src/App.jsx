@@ -1,8 +1,15 @@
+import MainContent from "./components/MainContent";
+import Sidebar from "./components/Sidebar";
+
+import "./scss/container.scss";
+
 function App() {
   return (
-    <>
-      <h1> Ola SASS</h1>
-    </>
+    <div id="portfolio" className="container">
+      <h1> Emmanuel Oliveira</h1>
+      <Sidebar />
+      <MainContent />
+    </div>
   );
 }
 
