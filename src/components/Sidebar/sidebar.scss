@@ -1,0 +1,38 @@
+@use "../../scss/variables.scss";
+@use "../../scss/mixins.scss";
+
+#sidebar {
+  background-color: variables.$bg-color;
+  flex: 1 0 0;
+  min-width: 360px;
+  border-radius: variables.$container-border-radius;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  padding: 3rem 0;
+
+  img {
+    max-width: 70%;
+    border-radius: variables.$container-border-radius;
+    position: absolute;
+    top: -2rem;
+  }
+  .title {
+    color: variables.$text-color-secondary;
+    background-color: variables.$bg-color-secondary;
+    border-radius: variables.$card-border-radius;
+    margin-top: 16rem;
+    padding: 0.8rem 1.2rem;
+  }
+  .btn {
+    @include mixins.btn;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .direction {
+      font-size: 2rem;
+    }
+  }
+}

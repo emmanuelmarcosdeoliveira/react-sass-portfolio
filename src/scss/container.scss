@@ -1,0 +1,24 @@
+@use "./variables";
+
+#portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+  gap: 3rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  width: 100%;
+  @media (max-width: 768px) {
+    max-width: 80%;
+    display: block;
+  }
+  h1 {
+    width: 100%;
+    font-size: 5rem;
+    margin-bottom: 4rem;
+    background: variables.$gradient;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}
