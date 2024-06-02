@@ -31,6 +31,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover {
+      background-color: variables.$gradient-hover;
+    }
     .direction {
       font-size: 2rem;
     }

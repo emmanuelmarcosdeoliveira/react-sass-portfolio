@@ -1,0 +1,64 @@
+@use "../../scss/variables.scss";
+@use "../../scss/mixins.scss";
+
+.technologies-container {
+  margin-bottom: 1rem;
+
+  .technologies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    .thechnologies-card {
+      @include mixins.center;
+      gap: 1rem;
+      padding: 1rem;
+      border: 1px solid #333;
+      width: 45%;
+      border-radius: variables.$card-border-radius;
+      h3 {
+        color: variables.$text-color;
+        margin-bottom: 1rem;
+      }
+      svg {
+        font-size: 6rem;
+      }
+    }
+  }
+}
+
+#html {
+  svg {
+    color: #e44d26;
+  }
+}
+#css {
+  svg {
+    color: #1572b6;
+  }
+}
+#js {
+  svg {
+    color: #f0db4f;
+  }
+}
+#node {
+  svg {
+    color: #83cd29;
+  }
+}
+#react {
+  svg {
+    color: #61dafb;
+  }
+}
+#vue {
+  svg {
+    color: #3fb27f;
+  }
+}
+
+#typescript {
+  svg {
+    color: #2f74c0;
+  }
+}
